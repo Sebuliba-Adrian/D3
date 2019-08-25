@@ -76,8 +76,8 @@
           - After you download the file onto your local machine, again generate MD5 hash for the downloaded file.
            Compare these two hashes and if they match, that means the file is downloaded perfectly without any data loss.
           - So MD5 hash can be used to uniquely identify a file.
-          - MD5 can also be used to check the integrity of messages sent in a chatting application. In this case the hashes of the sent and received n]messages are compare to ensure that the messages have not been tapere with  
-          - Also When storing passwordi to the database in a web application. MD5 can be used to hash the password stored in the database and that is in turn comapred with the password hash of a user logging into the application
+          - MD5 can also be used to check the integrity of messages sent in a chatting application. In this case the hashes of the sent and received messages are compare to ensure that the messages have not been tampered with or compromised.  
+          - Also In authentication when storing password to the database in a web application. MD5 can be used to hash the password stored in the database and that is in turn comapred with the password hash of a user attempting to login to the application
           
          Collisions:
               A collision is when two distinct input values to the hashing function produce the same hash. This is a problem, because if there are collisions then the algorithm can be compromised.
