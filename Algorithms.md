@@ -62,7 +62,9 @@
          (3) The resulting list will be sorted
           O(nlogn) — Is the time complexity
           
-       Hashing:
+          
+          
+5. ### Hashing:
          MD5
           MD5 is a Message Digest hashing algorithm that creates a fingerprint of the data input to the hashing function.
           Message-Digest algorithms are mathematical functions that transform a data string of arbitrary length into a second string of data of fixed length (128 bits, in this case). 
