@@ -35,20 +35,23 @@ Partitioning criteria
 Creating partition on a table
 
 Suppose that we have a MySQL table with the following schema
-```CREATE TABLE `Employee` (
+```
+CREATE TABLE `Employee` (
  `id` int(11) NOT NULL AUTO_INCREMENT,
  `firstname` varchar(50) DEFAULT NULL,
 `lastname` varchar(50) DEFAULT NULL,
  `email` varchar(100) DEFAULT NULL,
  `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1```
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+```
 
 
 Range partitioning
 A table that is partitioned by range is partitioned in such a way that each partition contains rows for which the partitioning expression value lies within a given range. Ranges should be contiguous but not overlapping and are defined using the VALUES LESS THAN operator.
  
-```ALTER TABLE Employees  PARTITION BY RANGE (id)
+```
+ALTER TABLE Employees  PARTITION BY RANGE (id)
   (
     PARTITION p1 VALUES LESS THAN (100),
     PARTITION p2 VALUES LESS THAN (200), 
@@ -60,7 +63,7 @@ A table that is partitioned by range is partitioned in such a way that each part
   );
 ```
 striping:
-
+Is the logical segmenting of sequential data, such as a file, so that consecutive segments are stored on different physical storage devices. This is done during backups in databases. Striping is useful when a processing device requests data more quickly than a single storage device can provide hence reducing or eliminating throttle. Striping facilitates accessing data concurrently which in turn increases total data throughput.
 
 clustering:
 
