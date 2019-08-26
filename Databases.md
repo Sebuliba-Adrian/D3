@@ -1,4 +1,4 @@
-###Dababases
+## Dababases
 
 A database index is a data structure that improves the speed of operations in a table.
 Databases uses indexes  to create and retrieve data from the database very quickly. Using an index to retrieve a portion of rows to perform a count ( * ) is the necessary alteration to overcome a full table scan for your application. Primary key, foreign key, and unique constraints.indexes By default have  indexes. You may want to create "indexes" for other columns that are frequently used in joins or search conditions.
@@ -62,9 +62,9 @@ ALTER TABLE Employees  PARTITION BY RANGE (id)
     PARTITION p7 VALUES LESS THAN MAXVALUE 
   );
 ```
-striping:
+### striping:
 Is the logical segmenting of sequential data, such as a file, so that consecutive segments are stored on different physical storage devices. This is done during backups in databases. Striping is useful when a processing device requests data more quickly than a single storage device can provide hence reducing or eliminating throttle. Striping facilitates accessing data concurrently which in turn increases total data throughput.
 
-clustering:
+### clustering:
 
 clustering is a technology that allows distributing the database across multiple independent nodes, to eliminate every possibility of failure thus providing high availability and low latency. It allows for almost infinite scaling of your MySQL-based website or application, which can be done horizontally, i.e. with very inexpensive machines. and low latency
